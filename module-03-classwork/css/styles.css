@@ -1,0 +1,136 @@
+/* 
+универсальный
+класса
+элемента
+id
+потомка
+дочерний
+сестринский
+атрибута
+*/
+
+body {
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+универсальный
+* {
+  color: red;
+}
+*/
+
+/* 
+Элемента
+p {
+  color: blueviolet;
+}
+*/
+
+/* 
+селектор класса
+.main-title {
+  color: red;
+  font-size: 60px;
+}
+
+.main-description {
+  color: blueviolet;
+}
+*/
+
+/* 
+селектор id
+#first-description {
+  color: red;
+}
+*/
+
+/* 
+селектор потомка
+.list .list-item {
+  color: orange;
+}
+*/
+
+/* 
+селектор дочерний
+.list > .list-item {
+  margin-bottom: 20px;
+}
+*/
+
+/* 
+сестринский селектор
+.main-title + p {
+  color: orangered;
+}
+*/
+
+/* 1 1 0 */
+/* #main-sec .main-description {
+  color: green;
+} */
+
+/* 0 2 0 */
+/* .main-section .main-description {
+  color: orchid !important;
+}
+
+.main-description {
+  width: 900px;
+  height: 50px;
+  padding: 5px;
+  border: 2px solid black;
+  box-sizing: border-box;
+} */
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.about {
+  font-size: 0;
+  background-color: brown;
+}
+
+.about__card {
+  display: inline-block;
+  width: 300px;
+  background-color: blueviolet;
+  padding-top: 10px;
+}
+
+.about__card:first-child {
+  margin-right: 300px;
+}
+
+.about-description {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+
+.navigation__list {
+  font-size: 0;
+  text-align: center;
+}
+
+.navigation__list-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation__list-item:last-child {
+  margin-right: 0;
+}
+
+.navigation__list-link {
+  font-size: 16px;
+}
