@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+picture {
+  display: block;
+}
+
+.children {
+  padding-top: 34px;
+  padding-bottom: 28px;
+}
+
+.children__content-wrapper {
+  margin-bottom: 42px;
+}
+
+.children__content-text-wrapper {
+  margin-bottom: 26px;
+}
+
+.children__content-text-wrapper::before {
+  display: block;
+  content: "";
+  width: 17px;
+  height: 13px;
+  background-image: url("../images/quote.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.children__content-text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+}
+
+.children__content-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.children__plashka {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.9px;
+  border-radius: 8px;
+  background-color: rgb(130, 79, 227);
+  color: #fff;
+  text-align: center;
+  padding: 22px 24px 28px 24px;
+}
+
+.children__plashka::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgb(252, 174, 38);
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 620px;
+  }
+
+  .children {
+    padding-top: 40px;
+    padding-bottom: 34px;
+  }
+
+  .children__content-text {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.9px;
+  }
+
+  .children__content-text-wrapper::before {
+    width: 26px;
+    height: 20px;
+    background-image: url("../images/quote-md.png");
+    transform: translateX(-34px);
+    margin-bottom: 4px;
+  }
+
+  .children__plashka {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 38px 108px 42px 76px;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .children__plashka::before {
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1320px) {
+  .container {
+    width: 1300px;
+  }
+
+  .children {
+    padding-top: 118px;
+    padding-bottom: 58px;
+  }
+
+  .children__content-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 114px;
+  }
+
+  .children__content-text-wrapper {
+    width: 532px;
+    padding-right: 34px;
+  }
+
+  .children__content-text {
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 1px;
+  }
+
+  .children__content-text-wrapper::before {
+    transform: translateX(-40px);
+    margin-bottom: 0;
+  }
+
+  .children__content-text:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  .children__plashka {
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 1.25px;
+    padding: 70px 258px 64px 228px;
+  }
+
+  .children__plashka::before {
+    width: 88px;
+    left: 158px;
+  }
+}
