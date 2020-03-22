@@ -1,0 +1,169 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aguafina-script-regular - latin */
+@font-face {
+  font-family: "Aguafina Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Aguafina Script Regular"), local("AguafinaScript-Regular"),
+    url("../fonts/aguafina-script-v8-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/aguafina-script-v8-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* body {
+  background-color: aqua;
+} */
+
+/* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* Когда ширина вьюпорта будет 500px и больше, применить красный background для body */
+/* @media (min-width: 500px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: saddlebrown;
+  }
+} */
+
+/* Когда ширина вьюпорта до 500px, покрасить body в зеленый */
+/* @media (max-width: 768px) {
+  body {
+    background-color: indianred;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: greenyellow;
+  }
+} */
+/* ========== AND ========== */
+/* На отрезке от 768px и до 960px применить желтый цвет для body */
+/* @media (min-width: 768px) and (max-width: 960px) {
+  body {
+    background-color: khaki;
+  }
+} */
+/* ========== OR ========== */
+/* До ширины вьюпорта 767px и после ширины вьюпорта 960px покрасить body в красный */
+/* @media (max-width: 767px), (min-width: 960px) {
+  body {
+    background-color: red;
+  }
+} */
+/* ========== TYPES ========== */
+/* @media speech {
+  p {
+    font-size: 32px;
+    text-decoration: underline;
+  }
+} */
+
+/* ========== ORIENTATION ========== */
+/* @media (orientation: portrait) {
+  body {
+    background-color: lawngreen;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: darkmagenta;
+  }
+} */
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.list__item {
+  outline: 1px solid #000;
+}
+
+.list__item-img {
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 680px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .list__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
