@@ -1,0 +1,213 @@
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/roboto-v20-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/roboto-v20-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* FEATURED */
+.featured-product {
+  padding: 50px 0;
+}
+
+.products-list__item_featured:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.products-list__img-wrapper {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s linear;
+}
+
+.overlay-list {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 60px;
+}
+
+.overlay-list__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.overlay-list__btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0px 3px 9px 1px rgba(15, 33, 97, 0.05);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.overlay-list__btn:hover {
+  background-color: rgb(255, 83, 83);
+}
+
+.overlay-list__btn_view {
+  background-image: url("../images/featured/view.png");
+}
+
+.overlay-list__btn_wish {
+  background-image: url("../images/featured/wish.png");
+}
+
+.overlay-list__btn_cart {
+  background-image: url("../images/featured/cart.png");
+}
+
+/* TRENDING */
+.products {
+  padding: 50px 0;
+}
+
+.sections-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products-list__img {
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.products-list__item {
+  text-align: center;
+}
+
+.products-list__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #888888;
+  margin-bottom: 8px;
+}
+
+.products-list__price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.rating-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.rating-list__item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.rating-list__item::before {
+  content: url("../images/star.png");
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .products-list__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sections-title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 995px) {
+  .products-list__item_featured:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .products-list__item_trending:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 996px) and (max-width: 1199px) {
+  .products-list__item_trending:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products {
+    padding: 74px 0;
+  }
+
+  .products-list__item_trending:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 40px;
+  }
+}
